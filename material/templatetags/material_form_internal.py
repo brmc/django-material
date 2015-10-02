@@ -47,7 +47,6 @@ class FormRenderNode(Node):
 
     def render(self, context):
         element = self.element.resolve(context)
-
         options = {}
         for key, value in self.kwargs.items():
             options[key] = value.resolve(context)

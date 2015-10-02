@@ -1,5 +1,5 @@
 if (navigator.appVersion.indexOf('Win') != -1) {
-    document.write('<link rel="stylesheet" type="text/css" href="{% static "material/css/robotofix.css" %}">');
+    document.write('<link rel="stylesheet" type="text/css" href="/static/material/css/robotofix.css">');
 }
 
 $(document).on('ready pjax:complete', function() {
