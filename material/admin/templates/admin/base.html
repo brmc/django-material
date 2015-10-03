@@ -15,6 +15,7 @@
         <script type="text/javascript">window.__admin_media_prefix__ = "{% filter escapejs %}{% static "admin/" %}{% endfilter %}";</script>
         <script type="text/javascript">window.__admin_utc_offset__ = "{% filter escapejs %}{% now "Z" %}{% endfilter %}";</script>
         <script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/admin.css' %}">
         {{ media.js }}
         {{ media.css }}
         {% block extrahead %}{% endblock %}
