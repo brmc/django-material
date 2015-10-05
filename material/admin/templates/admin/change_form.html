@@ -16,7 +16,7 @@
 
 {% block content %}
     <div class="row change-form">
-        <div class="col s12 m12 l12">
+        <div class="col s12 m12 l9">
             <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form">
                 <div class="card">
                     <div class="card-content">
@@ -65,7 +65,7 @@
                         {% endform %}
                         {% block inline_field_sets2 %}
                             {% for inline_admin_formset in inline_admin_formsets %}
-                                    {% include inline_admin_formset.opts.template %}
+                                {% include inline_admin_formset.opts.template %}
                             {% endfor %}
                         {% endblock %}
                         {# JavaScript for prepopulated fields #}
@@ -77,6 +77,33 @@
                         </div>
                     </div>
             </form>
+
+        </div>
+    </div>
+    <div class="col s12 m4 l3 quick-nav">
+        <div class="card filters">
+            <div class="card-content">
+                <span class="card-title black-text" style="margin-bottom:20px">Quick Navigation</span>
+
+
+
+
+
+
+
+
+
+                <div class="clearfix"></div>
+                <ul>
+                    <li><a href="#header">Top</a></li>
+                    {% for inline_admin_formset in inline_admin_formsets %}
+                        <li> <a href="#{{ inline_admin_formset.formset.prefix }}-group">
+                            {{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="card-action">&nbsp;</div>
         </div>
     </div>
     </div>
