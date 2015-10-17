@@ -43,7 +43,6 @@ class NewModelAdmin(admin.ModelAdmin):
         If kwargs are given, they're passed to the form Field's constructor.
         """
         request = kwargs.pop("request", None)
-        print self.admin_site
         # If the field specifies choices, we don't need to look for special
         # admin widgets - we just need to use a select widget of some kind.
         if db_field.choices:
