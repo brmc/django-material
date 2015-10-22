@@ -921,7 +921,7 @@ FixedHeader.prototype = {
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Static properties and methods
- *   We use these for speed! This information is common to all instances of FixedHeader, so no
+ *   We use these for calculate_speed! This information is common to all instances of FixedHeader, so no
  * point if having them calculated and stored for each different instance.
  */
 

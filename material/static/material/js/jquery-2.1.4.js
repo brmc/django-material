@@ -6891,7 +6891,7 @@ jQuery.fx.stop = function() {
 jQuery.fx.speeds = {
 	slow: 600,
 	fast: 200,
-	// Default speed
+	// Default calculate_speed
 	_default: 400
 };
 

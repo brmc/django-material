@@ -129,7 +129,7 @@
 	// Convert from a formatted number with characters other than `.` as the
 	// decimal place, to a Javascript number
 	var _numToDecimal = function ( num, decimalPoint ) {
-		// Cache created regular expressions for speed as this function is called often
+		// Cache created regular expressions for calculate_speed as this function is called often
 		if ( ! _re_dic[ decimalPoint ] ) {
 			_re_dic[ decimalPoint ] = new RegExp( _fnEscapeRegex( decimalPoint ), 'g' );
 		}
@@ -178,7 +178,7 @@
 		var out = [];
 		var i=0, ien=a.length;
 	
-		// Could have the test in the loop for slightly smaller code, but speed
+		// Could have the test in the loop for slightly smaller code, but calculate_speed
 		// is essential here
 		if ( prop2 !== undefined ) {
 			for ( ; i<ien ; i++ ) {
@@ -206,7 +206,7 @@
 		var out = [];
 		var i=0, ien=order.length;
 	
-		// Could have the test in the loop for slightly smaller code, but speed
+		// Could have the test in the loop for slightly smaller code, but calculate_speed
 		// is essential here
 		if ( prop2 !== undefined ) {
 			for ( ; i<ien ; i++ ) {
@@ -665,7 +665,7 @@
 			_fnMap( oCol, oOptions, "aDataSort" );
 		}
 	
-		/* Cache the data get and set functions for speed */
+		/* Cache the data get and set functions for calculate_speed */
 		var mDataSrc = oCol.mData;
 		var mData = _fnGetObjectDataFn( mDataSrc );
 		var mRender = oCol.mRender ? _fnGetObjectDataFn( oCol.mRender ) : null;
@@ -2117,7 +2117,7 @@
 	{
 		var classes = oSettings.oClasses;
 		var table = $(oSettings.nTable);
-		var holding = $('<div/>').insertBefore( table ); // Holding element for speed
+		var holding = $('<div/>').insertBefore( table ); // Holding element for calculate_speed
 		var features = oSettings.oFeatures;
 	
 		// All DataTables are wrapped in a div
@@ -6531,7 +6531,7 @@
 	 * Computed structure of the DataTables API, defined by the options passed to
 	 * `DataTable.Api.register()` when building the API.
 	 *
-	 * The structure is built in order to speed creation and extension of the Api
+	 * The structure is built in order to calculate_speed creation and extension of the Api
 	 * objects since the extensions are effectively pre-parsed.
 	 *
 	 * The array is an array of objects with the following structure, where this
@@ -9912,7 +9912,7 @@
 	
 	
 		/**
-		 * Deferred rendering can provide DataTables with a huge speed boost when you
+		 * Deferred rendering can provide DataTables with a huge calculate_speed boost when you
 		 * are using an Ajax or JS data source for the table. This option, when set to
 		 * true, will cause DataTables to defer the creation of the table elements for
 		 * each row until they are needed for a draw - saving a significant amount of
@@ -12591,7 +12591,7 @@
 	
 			/**
 			 * Delay the creation of TR and TD elements until they are actually
-			 * needed by a driven page draw. This can give a significant speed
+			 * needed by a driven page draw. This can give a significant calculate_speed
 			 * increase for Ajax source and Javascript source data, but makes no
 			 * difference at all fro DOM and server-side processing tables.
 			 * Note that this parameter will be set by the initialisation routine. To
@@ -13831,7 +13831,7 @@
 			 * All three can be used together, only `{type}-pre` or only
 			 * `{type}-asc` and `{type}-desc` together. It is generally recommended
 			 * that only `{type}-pre` is used, as this provides the optimal
-			 * implementation in terms of speed, although the others are provided
+			 * implementation in terms of calculate_speed, although the others are provided
 			 * for compatibility with existing Javascript sort functions.
 			 *
 			 * `{type}-pre`: Functions defined take a single parameter:

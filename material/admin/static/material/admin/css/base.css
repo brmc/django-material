@@ -55,7 +55,7 @@ body {
     height: 30px;
     position: relative;
     top: 15px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 @media only screen and (max-width : 600px) {
@@ -95,7 +95,7 @@ body {
 */
 
 .no-padding {
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
 ul.side-nav.fixed.module-menu {
@@ -103,9 +103,9 @@ ul.side-nav.fixed.module-menu {
 }
 
 ul.side-nav.fixed.module-menu li a {
-  font-size: 13px;
-  line-height: 44px;
-  height: 44px;
+    font-size: 13px;
+    line-height: 44px;
+    height: 44px;
 }
 
 ul.side-nav.module-menu .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
@@ -113,7 +113,7 @@ ul.side-nav.module-menu .collapsible-body li.active, .side-nav.fixed .collapsibl
 }
 
 ul.side-nav.module-menu .collapsible-body li a {
-  margin: 0 1rem 0 2rem;
+    margin: 0 1rem 0 2rem;
 }
 
 ul.side-nav.module-menu .collapsible-body li .collapsible-body a {
@@ -164,6 +164,7 @@ ul.side-nav.module-menu li.active>a>span.badge {
 */
 .app-list {
     max-width: 1300px;
+//width:80%;
 }
 
 .app-item {
@@ -260,7 +261,7 @@ ul.side-nav.module-menu li.active>a>span.badge {
     background: white;
 }
 
-.results table.dataTable.dtr-inline.collapsed tbody td:first-child:before, 
+.results table.dataTable.dtr-inline.collapsed tbody td:first-child:before,
 .results table.dataTable.dtr-inline.collapsed tbody th:first-child:before {
     top: 18px;
     left: 4px;
@@ -277,10 +278,10 @@ ul.side-nav.module-menu li.active>a>span.badge {
     font-variant: normal;
     text-transform: none;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.results table.dataTable.dtr-inline.collapsed tbody tr.parent td:first-child:before, 
+.results table.dataTable.dtr-inline.collapsed tbody tr.parent td:first-child:before,
 .results table.dataTable.dtr-inline.collapsed tbody tr.parent th:first-child:before {
     color: orange;
     background-color: #fff;
